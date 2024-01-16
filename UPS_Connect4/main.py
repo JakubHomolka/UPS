@@ -1,8 +1,10 @@
 import tkinter as tk
 
-from login_win import LoginWin
+from LoginWin import LoginWin
 
+
+# Hlavní vstupní bod aplikace, spouští přihlašovací okno
 if __name__ == "__main__":
     root = tk.Tk()
-    gui = LoginWin(root)
+    start = LoginWin(root)
     root.mainloop()
