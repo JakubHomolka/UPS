@@ -105,7 +105,6 @@ class LoginWin:
 
 
         except Exception as e:
-            messagebox.showerror("ERR", "Connestion failed. Check your input atributes." )
             print(f"Error {e}")
 
     # Funkce pro poslouchání přijatých zpráv ze serveru
@@ -128,8 +127,9 @@ class LoginWin:
                     self.response(msg)
 
             except Exception as e:
-                messagebox.showerror("ERR", f"Error read: {e}")
                 print(f"Error read: {e}")
+                print("App quit")
+                self.end()
                 break
 
     # Funkce pro nastavení timoutu pro odpojení ze serveru
@@ -162,7 +162,6 @@ class LoginWin:
             if self.server_socket:
                 self.server_socket.close()
         except Exception as e:
-            messagebox.showerror("ERR", f"Error with close socket: {e}")
             print(f"Error with close socket: {e}")
         self.server_socket = None
         self.root.deiconify()
