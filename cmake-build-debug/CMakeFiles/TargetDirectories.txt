@@ -1,0 +1,3 @@
+/mnt/c/Users/werto/CLionProjects/SP_UPS_Server/cmake-build-debug/CMakeFiles/SP_UPS_Server.dir
+/mnt/c/Users/werto/CLionProjects/SP_UPS_Server/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/werto/CLionProjects/SP_UPS_Server/cmake-build-debug/CMakeFiles/rebuild_cache.dir
